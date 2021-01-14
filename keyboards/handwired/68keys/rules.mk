@@ -6,7 +6,7 @@ BOOTLOADER = halfkay
 BOARD = PJRC_TEENSY_3_1
 
 # Enter lower-power sleep mode when on the ChibiOS idle thread
-OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+# OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
 
 # Build Options
 #   change yes to no to disable
