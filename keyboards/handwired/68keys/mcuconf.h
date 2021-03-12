@@ -45,10 +45,4 @@
 #define KINETIS_USB_USE_USB0                TRUE
 #define KINETIS_USB_USB0_IRQ_PRIORITY       5
 
-/*
- * I2C driver settings
- */
-#define KINETIS_I2C_USE_I2C0                TRUE
-#define KINETIS_I2C_I2C0_PRIORITY           4
-
 #endif /* _MCUCONF_H_ */
