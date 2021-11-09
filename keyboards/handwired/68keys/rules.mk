@@ -4,6 +4,12 @@ MCU = MK20DX256
 # Enter lower-power sleep mode when on the ChibiOS idle thread
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
 
+# Extra Flags: enable link time optimization. This breaks
+# ACTION_MACRO and ACTION_FUNCTION, which are disable by default
+# anyway. For the teensy 3.2, this saves 2.5K bytes (8% of the
+# image size)
+EXTRAFLAGS += -flto
+
 # Build Options
 #   change yes to no to disable
 #
