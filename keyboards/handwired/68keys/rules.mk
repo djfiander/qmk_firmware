@@ -1,8 +1,7 @@
-# MCU name
-MCU = MK20DX256
-
-# Enter lower-power sleep mode when on the ChibiOS idle thread
-OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+#
+#
+#
+DEFAULT_FOLDER = handwired/68keys/teensy_32
 
 # Extra Flags: enable link time optimization. This breaks
 # ACTION_MACRO and ACTION_FUNCTION, which are disable by default
