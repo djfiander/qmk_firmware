@@ -11,7 +11,7 @@
  *
  */
 
-#define MATRIX_ROW_PINS {A2, A1, A0, B8, B13} 
+#define MATRIX_ROW_PINS {A2, A1, A0, B8, B13}
 
 #define MATRIX_COL_PINS { \
 	B7,  B6,  B5,  B4,  B3, \
@@ -20,6 +20,6 @@
 }
 
 #define LED_PIN_ON_STATE 1 /* 1 for HIGH (default), 0 for LOW */
-#define LED_CAPS_LOCK_PIN A15
+#define LED_CAPS_LOCK_PIN A10
 
 #define UNUSED_PINS
