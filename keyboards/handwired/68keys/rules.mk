@@ -1,7 +1,7 @@
 #
 #
 #
-DEFAULT_FOLDER = handwired/68keys/teensy_32
+DEFAULT_FOLDER = handwired/68keys/proton_c
 
 # Extra Flags: enable link time optimization. This breaks
 # ACTION_MACRO and ACTION_FUNCTION, which are disable by default
