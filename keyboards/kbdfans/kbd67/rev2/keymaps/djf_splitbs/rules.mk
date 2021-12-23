@@ -1,5 +1,5 @@
 # Disable features I'm not interested in
-USER_NAME := djfiander	       # Load my userspace configuration
+USER_NAME := djfiander
 EXTRAKEY_ENABLE = no	       # Audio control and System control
 CONSOLE_ENABLE = no	       # Console for debugging
 BOOTMAGIC_ENABLE = no
