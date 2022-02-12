@@ -1,5 +1,4 @@
-/*
- * Copyright (C) 2019-2020  Maxr1998 <max.rumpf1998@gmail.com>
+/* Copyright 2019
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,23 +14,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "pulse4k.h"
+#pragma once
 
-bool encoder_update_kb(uint8_t index, bool clockwise) {
-    if (!encoder_update_user(index, clockwise)) return false;
+// TODO: including this causes "error: expected identifier before '(' token" errors
+//#include "config_common.h"
 
-    if (index == 0) {
-        encoder_one_update(clockwise);
-    } else if (index == 1) {
-        encoder_two_update(clockwise);
-    }
-    return true;
-}
+#define PRODUCT Numpad Teensy 3.2
 
-__attribute__((weak)) void encoder_one_update(bool clockwise) {
-    tap_code(!clockwise ? KC_PGUP : KC_PGDN);
-}
+#define MATRIX_COL_PINS { D0, A12, A13 } /* 2, 3, 4 */
+#define MATRIX_ROW_PINS { C3, C4, C6, C7 } /* 9, 10, 11, 12 */
+#define UNUSED_PINS
 
-__attribute__((weak)) void encoder_two_update(bool clockwise) {
-    tap_code(!clockwise ? KC_VOLD : KC_VOLU);
-}
+// i2c_master defines
+#define I2C1_SCL_PIN B0 // A2 on pinout = B0
+#define I2C1_SDA_PIN B1 // A3 on pinout = B1
+#define I2C1_SCL_PAL_MODE PAL_MODE_ALTERNATIVE_2
+#define I2C1_SDA_PAL_MODE PAL_MODE_ALTERNATIVE_2
