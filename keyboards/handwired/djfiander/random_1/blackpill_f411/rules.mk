@@ -1,4 +1,3 @@
-DEFAULT_FOLDER = handwired/djfiander/random_1/blackpill_f411
 
 # MCU name
 MCU = STM32F411
