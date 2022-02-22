@@ -14,6 +14,7 @@
 
 /*
  * Bad pins:
+ *    A0:          User key
  *    A8-A12:      USB
  *    B2:          BOOT1
  *    C13:         LED
@@ -21,8 +22,8 @@
 #define MATRIX_ROW_PINS { A6, A7, B0, B1, B10 }
 
 #define MATRIX_COL_PINS { \
-        A12, A15, B3, B4, B5, B6, B7, \
-        B8,  B9,  A0, A1, A2, A3, A4, A5 \
+        B15, A12, A15, B3, B4, B5, B6, B7,       \
+        B8,   B9,  A1, A2, A3, A4, A5 \
 }
 
 #define UNUSED_PINS

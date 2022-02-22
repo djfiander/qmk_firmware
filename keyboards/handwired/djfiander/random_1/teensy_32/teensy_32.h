@@ -28,7 +28,7 @@
         B1, B3, B2, D5, D6, C1, C2 \
     }
 
-                        /*  3,  4,  5,  6,  7*/
-#define MATRIX_ROW_PINS { A12, D7, D4, D2, D3  }
+                        /*  1   2,   3,  5,  6 */
+#define MATRIX_ROW_PINS { B17, D0, A12, D7, D4 }
 
-#define LED_CAPS_LOCK_PIN D0    /* 2 */
+#define LED_CAPS_LOCK_PIN B16    /* 0 */
