@@ -16,6 +16,11 @@
 
 #pragma once
 
+#undef MATRIX_ROWS
+#undef MATRIX_COLS
+
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 3
 // TODO: including this causes "error: expected identifier before '(' token" errors
 //#include "config_common.h"
 
@@ -23,12 +28,18 @@
        *  8,  9, 10, 11, 12, 14, 15, 16
        * 17, 18, 19, 20, 21, 22, 23
        */
-#define MATRIX_COL_PINS { \
-        D3, C3, C4, C6, C7, D1, C0, B0, \
-        B1, B3, B2, D5, D6, C1, C2 \
-    }
+#define MATRIX_COL_PINS {D3, C3, C4 }
+
+/* #define MATRIX_COL_PINS { \ */
+/*         D3, C3, C4, C6, C7, D1, C0, B0, \ */
+/*         B1, B3, B2, D5, D6, C1, C2 \ */
+/*     } */
+
+#define MATRIX_ROW_PINS { B17, D0, A12, D7 }
 
                         /*  1   2,   3,  5,  6 */
-#define MATRIX_ROW_PINS { B17, D0, A12, D7, D4 }
+/* #define MATRIX_ROW_PINS { B17, D0, A12, D7, D4 } */
+
+#define UNUSED_PINS
 
 #define LED_CAPS_LOCK_PIN B16    /* 0 */

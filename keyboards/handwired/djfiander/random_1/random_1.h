@@ -21,6 +21,18 @@
 // The first section contains all of the arguments
 // The second converts the arguments into a two-dimensional array
 
+#define LAYOUT_random_test( \
+    k00, k01, k02, \
+    k10, k11, k12, \
+         k21, k22, \
+         k31, k32 \
+    ) { \
+        { k00, k01, k02 }, \
+        { k10, k11, k12 }, \
+        { XXX, k21, k22 }, \
+        { XXX, k31, k32 } \
+}
+
 #define LAYOUT_random_1( \
     k00, k01, k02, k03, k04,      k06,      k08,      k0a, k0b, k0c, k0d, k0e, \
     k10, k11, k12, k13, k14,      k16, k17, k18, k19, k1a, k1b, k1c, k1d, k1e, \

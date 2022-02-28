@@ -21,8 +21,8 @@
 
 #define PRODUCT Onekey Teensy 3.2
 
-#define MATRIX_COL_PINS { D5 }
-#define MATRIX_ROW_PINS { B2 }
+#define MATRIX_COL_PINS { B17 }
+#define MATRIX_ROW_PINS { D3 }
 #define UNUSED_PINS
 
 // i2c_master defines

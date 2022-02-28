@@ -29,20 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 15
 
 /* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
-
-/*
- * I never use more than eight layers, even on useful keyboards
- */
-#define LAYER_STATE_8BIT
-
-/*
- * Basic handwired keyboard doesn't have underglow, etc, so it
- * doesn't need the fancy stuff
- */
-#define HAL_USE_SPI FALSE
-#define HAL_USE_I2C FALSE
-#define HAL_USE_PWM FALSE
