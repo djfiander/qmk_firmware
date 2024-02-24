@@ -1,9 +1,5 @@
 #include QMK_KEYBOARD_H
 
-// mod-tap keys
-#define CTL_CAPS LCTL_T(KC_CAPS)
-#define CTL_APP  LCTL_T(KC_APP)
-
 // Left-hand home row mods
 #define HOME_A LGUI_T(KC_A)
 #define HOME_S LALT_T(KC_S)
@@ -17,9 +13,6 @@
 #define HOME_K RCTL_T(KC_K)
 #define HOME_L LALT_T(KC_L)
 #define HOME_SCLN RGUI_T(KC_SCLN)
-
-#define MEH_APP MEH_T(KC_APP)
-#define FL_CAPS LT(1, KC_CAPS)
 
 #define _BL 0
 #define _FL 1
